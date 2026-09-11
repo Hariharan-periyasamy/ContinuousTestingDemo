@@ -1,11 +1,10 @@
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
 
     @Test
-    public void testAdd() {
-        Calculator obj = new Calculator();
-        assertEquals(8, obj.add(5, 3));
+    public void testAddition() {
+        assertEquals(5, Calculator.add(2, 3));
     }
 }
